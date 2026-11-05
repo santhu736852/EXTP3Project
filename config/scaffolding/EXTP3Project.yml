@@ -1,22 +1,22 @@
+version: "1.0"
 info:
   model: int-scaffold
 packages:
-- gitBranch: main
+- name: EXTP3Project
   gitServerName: GH_SK_Share
   gitUrl: https://github.com/santhu736852
   gitUsername: santhu736852
-  name: EXTP3Project
+  gitBranch: main
 services:
-- packages:
+- serviceName: project.extp3.integrations:d1
+  packages:
   - name: EXTP3Project
     version: 1.1.1
-  serviceName: project.extp3.integrations:d1
-- packages:
+- serviceName: pub.date:getCurrentDate
+  packages:
   - name: WmPublic
     version: 12.1.0.0.1326
-  serviceName: pub.date:getCurrentDate
-- packages:
+- serviceName: project.extp3.integrations:d2
+  packages:
   - name: EXTP3Project
     version: 1.1.1
-  serviceName: project.extp3.integrations:d2
-version: '1.0'
