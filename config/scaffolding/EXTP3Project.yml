@@ -16,3 +16,7 @@ services:
   packages:
   - name: WmPublic
     version: 12.1.0.0.1326
+- serviceName: project.extp3.integrations:d2
+  packages:
+  - name: EXTP3Project
+    version: "1.0"
